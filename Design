@@ -1,0 +1,85 @@
+// 1st phase 
+// we will make the basic design
+ -->
+     install npm init -y
+     npm i express
+    npm  i ejs 
+    npm i mongoose 
+    touch app.js
+    connect to 8080: then npx nodemon app.js
+
+-->  //sudo brew services start mongodb-community@8.0
+     // ==> mongosh
+
+-->    "mongodb://127.0.0.1:27017/test" // copy from mongo js website ans pase in the main fxn
+         
+      then we created  the main fxn , and then we created the 
+
+
+      #######################
+--> now we willc create the Schema for the dabase ,
+     for that we created the folder "Models "-> ' listing.js '
+      and then exporting our model to app.js
+
+      will put some data for in the listing file , as a default data 
+
+--> $$$$$$$$$$$$$$$$$$$$$ app.js continue
+     here we will create a dabase(object) on the basic of the schema int eh listig 
+     ans then will save it to the database
+
+     then go the terminal ans check the whether a databse of wanderlust name has been created or not
+     show dbs -> use wanderlust -> show collections -> <u> db.listing.find() </u> { before the last step call from the chrome } , u will see a colelction named as listing 
+     
+     🌟🌟🌟🌟🌟🌟 : to detle the item(collections) from the database the prompt is :  db.listings.deleteMany( {image : {$exists : false } } )
+
+--> 
+     init folder to initialize the data
+     in this we created a data file whre we copied the data from github
+     then we created a index.js file whre we gave the command to delte the previous data and insert new data
+**   we need to run this index file also : http://localhost:8080/testlisting ; then int the bootom terminal 
+     stop npx nodemon app.js( Ctrl + c) -> cd init -> node index.js -> int the terminal :" db.listings.find() "
+
+-->  now we will create routes
+     folder views : folder listings : index.ejs => 
+     so completed index route
+
+-->  now we will make show route , which will be to show all the data of a specific collction/ hotel 
+ 
+ -->  then we create different routes such as edit , update , delete 
+
+ // 2ND PHASE
+
+ now we will start adding styleing in our project
+ // we will use EJS MATE
+  -> npm i ejs-mate // includeing ejs mate
+
+  with boilerplate to code to give basic styling to all pages :
+            css -> boilderplare-> replace the original code(in other eja files ) code for boilder plate file 
+     -> Navbar
+
+then we added form validation by adding the file script.js
+
+
+
+
+--> used cloudinary to store the images 
+    stored imp keys and values in .env file 
+      npm install cloudinary@1.29.1 
+      npm install multer-storage-cloudinary
+
+
+ -->   creating folder CloudConfig.js :
+                  defining the type of folder we need on cloudinary 
+
+--> for mongodb , use your personal internet 
+
+--> for uploading on git 
+    .git init
+    git status 
+    touch .gitignore // write the file names which you dont have to upload on github
+    git add .
+    git status
+    git commit -m "Add Project Files"
+
+
+        
