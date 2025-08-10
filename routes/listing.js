@@ -11,6 +11,7 @@ const { storage } = require("../CloudConfig.js"); // ✅ CORRECT WAY
 const upload = multer({ storage });// here we have changed the data storage location from uploads to storage in cloudinary
 
 
+
 router
     .route("/")
     //Index route 

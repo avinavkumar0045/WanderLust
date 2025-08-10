@@ -110,6 +110,10 @@ app.use((req , res, next)=>{
 //    res.send(registerdUser);
 // })
 // refer flash.ejs 
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 app.use("/listings", listingRouter); // it means where ever /lisitngs will come we will use our lisitngs 
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
